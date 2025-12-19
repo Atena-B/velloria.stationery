@@ -8,7 +8,7 @@
                 shortDesc: "خودکار ژله‌ای با نوک ۰.۵ میلی‌متر",
                 fullDesc: "خودکار ژله‌ای با کیفیت بالا، رنگ نوشتاری مشکی ، نوک ۰.۵ میلی‌متر، مناسب برای نوشتن طولانی مدت بدون خستگی دست. بدنه ارگونومیک و مقاوم.",
                 images: ["images/pen1.jpg", "images/pen1-2.jpg", "images/pen1-3.jpg"],
-                thumbnails: ["pen1.jpg", "pen1-2.jpg", "pen1-3.jpg"]
+                thumbnails: ["images/pen1.jpg", "images/pen1-2.jpg", "images/pen1-3.jpg"]
             },
             {
                 id: 2,
@@ -17,8 +17,8 @@
                 price: 45000,
                 shortDesc: "دفتر با جلد سخت و خط‌دار",
                 fullDesc: "دفتر ۱۰۰ برگ سایز A5 با جلد سخت و مقاوم، خط‌کشی منظم ۸ میلی‌متری، کاغذ ۷۰ گرمی مرغوب، مناسب برای دانش‌آموزان و دانشجویان.",
-                images: ["notebook1.jpg", "notebook1-2.jpg"],
-                thumbnails: ["notebook1.jpg", "notebook1-2.jpg"]
+                images: ["images/notebook1.jpg", "images/notebook1-2.jpg"],
+                thumbnails: ["images/notebook1.jpg", "images/notebook1-2.jpg"]
             },
             {
                 id: 3,
@@ -27,8 +27,8 @@
                 price: 85000,
                 shortDesc: "ست مداد رنگی حرفه‌ای",
                 fullDesc: "ست کامل ۱۲ عدد مداد رنگی با کیفیت بالا، رنگ‌های زنده و درخشان، مناسب برای نقاشی، طراحی و رنگ‌آمیزی. مقاوم در برابر شکستن.",
-                images: ["pencils1.jpg", "pencils1-2.jpg", "pencils1-3.jpg"],
-                thumbnails: ["pencils1.jpg", "pencils1-2.jpg", "pencils1-3.jpg"]
+                images: ["images/pencils1.jpg", "images/pencils1-2.jpg", "images/pencils1-3.jpg"],
+                thumbnails: ["images/pencils1.jpg", "images/pencils1-2.jpg", "images/pencils1-3.jpg"]
             },
             {
                 id: 4,
@@ -37,8 +37,8 @@
                 price: 120000,
                 shortDesc: "جامدادی با زیپ محکم",
                 fullDesc: "جامدادی مخملی با طراحی زیبا، زیپ محکم و مقاوم، ظرفیت ۳۰ عدد مداد و خودکار، مناسب برای حمل لوازم تحریر به مدرسه و دانشگاه.",
-                images: ["pouch1.jpg", "pouch1-2.jpg"],
-                thumbnails: ["pouch1.jpg", "pouch1-2.jpg"]
+                images: ["images/pouch1.jpg", "images/pouch1-2.jpg"],
+                thumbnails: ["images/pouch1.jpg", "images/pouch1-2.jpg"]
             },
             {
                 id: 5,
@@ -47,8 +47,8 @@
                 price: 180000,
                 shortDesc: "خودکار ژله‌ای با نوک ۰.۵ میلی‌متر",
                 fullDesc: "خودکار ژله‌ای با کیفیت بالا، رنگ نوشتاری قرمز ، نوک ۰.۵ میلی‌متر، مناسب برای نوشتن طولانی مدت بدون خستگی دست. بدنه ارگونومیک و مقاوم.",
-                images: ["fountain1.jpg", "fountain1-2.jpg"],
-                thumbnails: ["fountain1.jpg", "fountain1-2.jpg"]
+                images: ["images/fountain1.jpg", "images/fountain1-2.jpg"],
+                thumbnails: ["images/fountain1.jpg", "images/fountain1-2.jpg"]
             },
             {
                 id: 6,
@@ -57,8 +57,8 @@
                 price: 35000,
                 shortDesc: "ست برچسب‌های رنگی",
                 fullDesc: "۵۰عدد برچسب رنگی در ۱۰ رنگ مختلف، چسبندگی مناسب، قابل پاک کردن از سطوح صاف، ایده‌آل برای علامت‌گذاری و تزیین دفتر.",
-                images: ["stickers1.jpg", "stickers1-2.jpg"],
-                thumbnails: ["stickers1.jpg", "stickers1-2.jpg"]
+                images: ["images/stickers1.jpg", "images/stickers1-2.jpg"],
+                thumbnails: ["images/stickers1.jpg", "images/stickers1-2.jpg"]
             },
             {
                 id: 7,
@@ -67,8 +67,8 @@
                 price: 95000,
                 shortDesc: "جامدادی با طراحی شیک",
                 fullDesc: "جامدادی چرم مصنوعی با دو محفظه مجزا، زیپ‌های محکم، مناسب برای حمل خودکار، مداد و پاک‌کن. طراحی کلاسیک و مقاوم.",
-                images: ["pencilcase1.jpg", "pencilcase1-2.jpg"],
-                thumbnails: ["pencilcase1.jpg", "pencilcase1-2.jpg"]
+                images: ["images/pencilcase1.jpg", "images/pencilcase1-2.jpg"],
+                thumbnails: ["images/pencilcase1.jpg", "images/pencilcase1-2.jpg"]
             },
             {
                 id: 8,
@@ -77,8 +77,8 @@
                 price: 28000,
                 shortDesc: "پاک‌کن بدون باقی‌مانده",
                 fullDesc: "پاک‌کن برقی حرفه‌ای ، پاک کردن بدون آسیب به کاغذ، مناسب برای مداد و خودکار، بدون باقی‌مانده و بوی نامطبوع.",
-                images: ["eraser1.jpg"],
-                thumbnails: ["eraser1.jpg"]
+                images: ["images/eraser1.jpg"],
+                thumbnails: ["images/eraser1.jpg"]
             },
             {
                 id: 9,
@@ -87,8 +87,8 @@
                 price: 75000,
                 shortDesc: "تقویم فانتزی رومیزی",
                 fullDesc: "تقویم رومیزی ۲۰۲۶ با طراحی زیبا، پایه فلزی محکم، مناسب برای میز کار و مطالعه، شامل تعطیلات رسمی.",
-                images: ["calendar1.jpg", "calendar1-2.jpg"],
-                thumbnails: ["calendar1.jpg", "calendar1-2.jpg"]
+                images: ["images/calendar1.jpg", "images/calendar1-2.jpg"],
+                thumbnails: ["images/calendar1.jpg", "images/calendar1-2.jpg"]
             },
             {
                 id: 10,
@@ -97,8 +97,8 @@
                 price: 220000,
                 shortDesc: "تراش برقی قابل حمل",
                 fullDesc: "تراش برقی USB با مخزن بزرگ، مناسب برای مدادهای مختلف، شارژی و قابل حمل، تیز کردن سریع و تمیز.",
-                images: ["sharpen1.jpg", "sharpen1-2.jpg"],
-                thumbnails: ["sharpen1.jpg", "sharpen1-2.jpg"]
+                images: ["images/sharpen1.jpg", "images/sharpen1-2.jpg"],
+                thumbnails: ["images/sharpen1.jpg", "images/sharpen1-2.jpg"]
             },
             {
                 id: 11,
@@ -107,8 +107,8 @@
                 price: 42000,
                 shortDesc: "خط‌کش فلزی دقیق",
                 fullDesc: "خط‌کش فلزی ۳۰ سانتی‌متری با لبه صاف و دقیق، مناسب برای طراحی فنی و خط‌کشی حرفه‌ای، مقاوم در برابر خمیدگی.",
-                images: ["ruler1.jpg"],
-                thumbnails: ["ruler1.jpg"]
+                images: ["images/ruler1.jpg"],
+                thumbnails: ["images/ruler1.jpg"]
             },
             {
                 id: 12,
@@ -117,8 +117,8 @@
                 price: 68000,
                 shortDesc: "ست هایلایتر رنگی",
                 fullDesc: "ست ۶ عدد هایلایتر در رنگ‌های مختلف، جوهر شفاف، مناسب برای علامت‌گذاری متن و جزوه، بدون نشت جوهر.",
-                images: ["highlighter1.jpg", "highlighter1-2.jpg"],
-                thumbnails: ["highlighter1.jpg", "highlighter1-2.jpg"]
+                images: ["images/highlighter1.jpg", "images/highlighter1-2.jpg"],
+                thumbnails: ["images/highlighter1.jpg", "images/highlighter1-2.jpg"]
             },
             {
                 id: 13,
@@ -127,8 +127,8 @@
                 price: 38000,
                 shortDesc: "دفترچه جیبی بدون خط",
                 fullDesc: "دفترچه یادداشت جیبی ۵۰ برگ، سایز مناسب کیف، کاغذ مرغوب، بدون خط برای یادداشت‌برداری آزاد.",
-                images: ["memo1.jpg", "memo1-2.jpg"],
-                thumbnails: ["memo1.jpg", "memo1-2.jpg"]
+                images: ["images/memo1.jpg", "images/memo1-2.jpg"],
+                thumbnails: ["images/memo1.jpg", "images/memo1-2.jpg"]
             },
             {
                 id: 14,
@@ -137,8 +137,8 @@
                 price: 15000,
                 shortDesc: "ست ۱۰۰ عدد گیره رنگی",
                 fullDesc: "۱۰۰ عدد گیره کاغذ رنگی، ضدزنگ، مناسب برای دسته‌بندی اسناد و کاغذها، در ۵ رنگ مختلف.",
-                images: ["clips1.jpg"],
-                thumbnails: ["clips1.jpg"]
+                images: ["images/clips1.jpg"],
+                thumbnails: ["images/clips1.jpg"]
             },
             {
                 id: 15,
@@ -147,8 +147,8 @@
                 price: 285000,
                 shortDesc: "کیف کامل لوازم تحریر",
                 fullDesc: "کیف کامل لوازم تحریر با ۳ محفظه، مناسب دانش‌آموزان دبستان، شامل خودکار، مداد ، پاک‌کن ، مداد رنگی ،ماژیک و ....",
-                images: ["bag1.jpg", "bag1-2.jpg", "bag1-3.jpg"],
-                thumbnails: ["bag1.jpg", "bag1-2.jpg", "bag1-3.jpg"]
+                images: ["images/bag1.jpg", "images/bag1-2.jpg", "images/bag1-3.jpg"],
+                thumbnails: ["images/bag1.jpg", "images/bag1-2.jpg", "images/bag1-3.jpg"]
             }
         ];
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
