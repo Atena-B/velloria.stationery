@@ -1,466 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>لوازم تحریر ولوریا</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background: linear-gradient(rgba(255,182,193,0.3), rgba(255,182,193,0.1)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffe4e6"/><stop offset="100%" stop-color="%23ffc1cc"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
-            min-height: 100vh;
-            color: #333;
-        }
-
-        .header-top {
-            background: linear-gradient(135deg, #ff69b4, #ff1493);
-            padding: 1rem;
-            box-shadow: 0 4px 15px rgba(255,105,180,0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .top-bar {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .search-box {
-            flex: 1;
-            max-width: 300px;
-            position: relative;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 0.8rem 2.5rem 0.8rem 1rem;
-            border: none;
-            border-radius: 25px;
-            font-size: 1rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            outline: none;
-        }
-
-        .search-btn {
-            position: absolute;
-            left: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            color: #ff69b4;
-        }
-
-        .categories {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .category-btn {
-            background: rgba(255,255,255,0.2);
-            border: 2px solid rgba(255,255,255,0.4);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .category-btn:hover, .category-btn.active {
-            background: white;
-            color: #ff69b4;
-            transform: translateY(-2px);
-        }
-
-        .main-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .product-card {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(255,105,180,0.2);
-            transition: all 0.4s ease;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(255,105,180,0.4);
-        }
-
-        .product-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 20px 20px 0 0;
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover .product-image {
-            transform: scale(1.1);
-        }
-
-        .product-info {
-            padding: 1.5rem;
-        }
-
-        .product-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #ff69b4;
-            margin-bottom: 0.5rem;
-        }
-
-        .product-price {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #ff1493;
-            margin-bottom: 1rem;
-        }
-
-        .cart-icon {
-            position: fixed;
-            top: 1.5rem;
-            left: 1.5rem;
-            background: linear-gradient(135deg, #ff69b4, #ff1493);
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            cursor: pointer;
-            box-shadow: 0 8px 25px rgba(255,105,180,0.4);
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .cart-icon:hover {
-            transform: scale(1.1);
-        }
-
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: #ff1493;
-            color: white;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .product-detail {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 2000;
-            padding: 2rem;
-            overflow-y: auto;
-        }
-
-        .detail-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.95);
-            border-radius: 25px;
-            padding: 3rem;
-            backdrop-filter: blur(20px);
-            animation: slideIn 0.4s ease;
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .detail-gallery {
-            display: grid;
-            grid-template-columns: 1fr 200px;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .main-detail-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-
-        .thumbnail-gallery {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .thumbnail {
-            width: 100%;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 15px;
-            cursor: pointer;
-            border: 3px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .thumbnail.active, .thumbnail:hover {
-            border-color: #ff69b4;
-            transform: scale(1.05);
-        }
-
-        .detail-info h2 {
-            color: #ff69b4;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-
-        .detail-price {
-            font-size: 2rem;
-            color: #ff1493;
-            font-weight: 700;
-            margin: 1rem 0;
-        }
-
-        .quantity-controls {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .qty-btn {
-            width: 45px;
-            height: 45px;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .qty-minus { background: #ffe4e6; color: #ff69b4; }
-        .qty-plus { background: #ff69b4; color: white; }
-        .qty-number {
-            font-size: 1.5rem;
-            font-weight: 700;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .add-to-cart {
-            background: linear-gradient(135deg, #ff69b4, #ff1493);
-            color: white;
-            border: none;
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin: 1rem 0;
-            box-shadow: 0 8px 25px rgba(255,105,180,0.3);
-        }
-
-        .add-to-cart:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255,105,180,0.4);
-        }
-
-        .close-detail {
-            position: absolute;
-            top: 1.5rem;
-            left: 1.5rem;
-            background: rgba(255,255,255,0.8);
-            border: none;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cart-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 3000;
-            padding: 2rem;
-            overflow-y: auto;
-        }
-
-        .cart-content {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(255,255,255,0.95);
-            border-radius: 25px;
-            padding: 3rem;
-            backdrop-filter: blur(20px);
-        }
-
-        .cart-item {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.5rem 0;
-            border-bottom: 1px solid rgba(255,105,180,0.2);
-        }
-
-        .cart-item:last-child {
-            border-bottom: none;
-        }
-
-        .cart-item-img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .cart-item-info {
-            flex: 1;
-        }
-
-        .cart-item-title {
-            font-weight: 600;
-            color: #ff69b4;
-            margin-bottom: 0.5rem;
-        }
-
-        .cart-total {
-            text-align: left;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ff1493;
-            margin: 2rem 0;
-        }
-
-        .cart-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .checkout-btn {
-            background: linear-gradient(135deg, #32cd32, #228b22);
-            color: white;
-            border: none;
-            padding: 1rem 3rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .clear-cart {
-            background: #ff6b9d;
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            border-radius: 25px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .products-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 1.5rem;
-            }
-            
-            .detail-gallery {
-                grid-template-columns: 1fr;
-            }
-            
-            .cart-actions {
-                flex-direction: column;
-            }
-        }
-
-        .empty-cart {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header-top">
         <div class="top-bar">
-            <div class="logo"> VELLORIA | ولوریا </div>
+            <div class="logo">VELLORIA | ولوریا </div>
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder=" دنبال چه محصولی میگردی ؟">
-                <button class="search-btn">🔍</button>
+                <input type="text" id="searchInput" placeholder="دنبال چه محصولی میگردی ؟">
+                <button class="search-btn" aria-label="جستجو">🔍</button>
             </div>
             <div class="categories">
                 <button class="category-btn active" data-category="all">همه</button>
                 <button class="category-btn" data-category="قلم">قلم و خودکار</button>
                 <button class="category-btn" data-category="دفتر">دفتر و کاغذ</button>
-                <button class="category-btn" data-category="کیف">کیف ، جامدادی و لوازم</button>
+                <button class="category-btn" data-category="کیف">کیف">کیف ، جامدادی </button>
             </div>
         </div>
     </div>
 
-    <div class="cart-icon" id="cartIcon">
+    <div class="cart-icon" id="cartIcon" aria-label="سبد خرید">
         🛒
         <div class="cart-count" id="cartCount">0</div>
     </div>
@@ -472,9 +39,9 @@
     </div>
 
     <!-- Modal جزئیات محصول -->
-    <div class="product-detail" id="productDetail">
+    <div class="product-detail" id="productDetail" role="dialog" aria-labelledby="detailTitle">
         <div class="detail-content">
-            <button class="close-detail" id="closeDetail">×</button>
+            <button class="close-detail" id="closeDetail" aria-label="بستن">×</button>
             <div class="detail-gallery">
                 <img class="main-detail-image" id="mainDetailImage" src="" alt="">
                 <div class="thumbnail-gallery" id="thumbnailGallery"></div>
@@ -484,9 +51,9 @@
                 <div class="detail-price" id="detailPrice"></div>
                 <p id="detailDescription"></p>
                 <div class="quantity-controls">
-                    <button class="qty-btn qty-minus" id="qtyMinus">-</button>
+                    <button class="qty-btn qty-minus" id="qtyMinus" aria-label="کاهش تعداد">-</button>
                     <span class="qty-number" id="quantity">1</span>
-                    <button class="qty-btn qty-plus" id="qtyPlus">+</button>
+                    <button class="qty-btn qty-plus" id="qtyPlus" aria-label="افزایش تعداد">+</button>
                 </div>
                 <button class="add-to-cart" id="addToCart">افزودن به سبد خرید</button>
             </div>
@@ -494,14 +61,18 @@
     </div>
 
     <!-- Modal سبد خرید -->
-    <div class="cart-modal" id="cartModal">
+    <div class="cart-modal" id="cartModal" role="dialog" aria-labelledby="cartTitle">
         <div class="cart-content">
-            <h2 style="color: #ff69b4; margin-bottom: 2rem; text-align: center;">سبد خرید</h2>
+            <h2 id="cartTitle">سبد خرید</h2>
             <div id="cartItems"></div>
             <div class="cart-total" id="cartTotal">مجموع: ۰ تومان</div>
             <div class="cart-actions">
-                <button class="checkout-btn">تایید خرید</button>
+                <button class="checkout-btn" id="checkoutBtn">تایید خرید</button>
                 <button class="clear-cart" id="clearCart">پاک کردن سبد</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
