@@ -97,8 +97,8 @@
                 price: 220000,
                 shortDesc: "تراش برقی قابل حمل",
                 fullDesc: "تراش برقی USB با مخزن بزرگ، مناسب برای مدادهای مختلف، شارژی و قابل حمل، تیز کردن سریع و تمیز.",
-                images: ["images/sharpen1.jpg", "images/sharpen1-2.jpg"],
-                thumbnails: ["images/sharpen1.jpg", "images/sharpen1-2.jpg"]
+                images: ["images/sharpen1.jpg"],
+                thumbnails: ["images/sharpen1.jpg"]
             },
             {
                 id: 11,
@@ -117,8 +117,8 @@
                 price: 68000,
                 shortDesc: "ست هایلایتر رنگی",
                 fullDesc: "ست ۶ عدد هایلایتر در رنگ‌های مختلف، جوهر شفاف، مناسب برای علامت‌گذاری متن و جزوه، بدون نشت جوهر.",
-                images: ["images/highlighter1.jpg", "images/highlighter1-2.jpg"],
-                thumbnails: ["images/highlighter1.jpg", "images/highlighter1-2.jpg"]
+                images: ["images/highlighter1.jpg"],
+                thumbnails: ["images/highlighter1.jpg"]
             },
             {
                 id: 13,
@@ -127,8 +127,8 @@
                 price: 38000,
                 shortDesc: "دفترچه جیبی بدون خط",
                 fullDesc: "دفترچه یادداشت جیبی ۵۰ برگ، سایز مناسب کیف، کاغذ مرغوب، بدون خط برای یادداشت‌برداری آزاد.",
-                images: ["images/memo1.jpg", "images/memo1-2.jpg"],
-                thumbnails: ["images/memo1.jpg", "images/memo1-2.jpg"]
+                images: ["images/memo1.jpg"],
+                thumbnails: ["images/memo1.jpg"]
             },
             {
                 id: 14,
@@ -147,8 +147,8 @@
                 price: 285000,
                 shortDesc: "کیف کامل لوازم تحریر",
                 fullDesc: "کیف کامل لوازم تحریر با ۳ محفظه، مناسب دانش‌آموزان دبستان، شامل خودکار، مداد ، پاک‌کن ، مداد رنگی ،ماژیک و ....",
-                images: ["images/bag1.jpg", "images/bag1-2.jpg", "images/bag1-3.jpg"],
-                thumbnails: ["images/bag1.jpg", "images/bag1-2.jpg", "images/bag1-3.jpg"]
+                images: ["images/bag1.jpg"],
+                thumbnails: ["images/bag1.jpg"]
             }
         ];
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
