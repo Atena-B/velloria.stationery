@@ -7,7 +7,7 @@
                 price: 25000,
                 shortDesc: "خودکار ژله‌ای با نوک ۰.۵ میلی‌متر",
                 fullDesc: "خودکار ژله‌ای با کیفیت بالا، رنگ نوشتاری مشکی ، نوک ۰.۵ میلی‌متر، مناسب برای نوشتن طولانی مدت بدون خستگی دست. بدنه ارگونومیک و مقاوم.",
-                images: ["images/pen1.jpg", "images/pen1-2.jpg", "images/pen1-3.jpg"],
+                images: ["images/pen1.jpg", "images/pen1-2.jpg"],
                 thumbnails: ["images/pen1.jpg", "images/pen1-2.jpg"]
             },
             {
@@ -37,8 +37,8 @@
                 price: 120000,
                 shortDesc: "جامدادی با زیپ محکم",
                 fullDesc: "جامدادی مخملی با طراحی زیبا، زیپ محکم و مقاوم، ظرفیت ۳۰ عدد مداد و خودکار، مناسب برای حمل لوازم تحریر به مدرسه و دانشگاه.",
-                images: ["images/pouch1.jpg", "images/pouch1-2.jpg"],
-                thumbnails: ["images/pouch1.jpg", "images/pouch1-2.jpg"]
+                images: ["images/pouch1.jpg"],
+                thumbnails: ["images/pouch1.jpg"]
             },
             {
                 id: 5,
