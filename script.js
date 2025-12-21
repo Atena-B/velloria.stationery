@@ -47,8 +47,8 @@
                 price: 180000,
                 shortDesc: "خودکار ژله‌ای با نوک ۰.۵ میلی‌متر",
                 fullDesc: "خودکار ژله‌ای با کیفیت بالا، رنگ نوشتاری قرمز ، نوک ۰.۵ میلی‌متر، مناسب برای نوشتن طولانی مدت بدون خستگی دست. بدنه ارگونومیک و مقاوم.",
-                images: ["images/fountain1.jpg", "images/fountain1-2.jpg"],
-                thumbnails: ["images/fountain1.jpg", "images/fountain1-2.jpg"]
+                images: ["images/fountain1.jpg"],
+                thumbnails: ["images/fountain1.jpg"]
             },
             {
                 id: 6,
@@ -57,8 +57,8 @@
                 price: 35000,
                 shortDesc: "ست برچسب‌های رنگی",
                 fullDesc: "۵۰عدد برچسب رنگی در ۱۰ رنگ مختلف، چسبندگی مناسب، قابل پاک کردن از سطوح صاف، ایده‌آل برای علامت‌گذاری و تزیین دفتر.",
-                images: ["images/stickers1.jpg", "images/stickers1-2.jpg"],
-                thumbnails: ["images/stickers1.jpg", "images/stickers1-2.jpg"]
+                images: ["images/stickers1.jpg"],
+                thumbnails: ["images/stickers1.jpg"]
             },
             {
                 id: 7,
