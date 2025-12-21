@@ -67,8 +67,8 @@
                 price: 95000,
                 shortDesc: "جامدادی با طراحی شیک",
                 fullDesc: "جامدادی چرم مصنوعی با دو محفظه مجزا، زیپ‌های محکم، مناسب برای حمل خودکار، مداد و پاک‌کن. طراحی کلاسیک و مقاوم.",
-                images: ["images/pencilcase1.jpg", "images/pencilcase1-2.jpg"],
-                thumbnails: ["images/pencilcase1.jpg", "images/pencilcase1-2.jpg"]
+                images: ["images/pencilcase1.jpg"],
+                thumbnails: ["images/pencilcase1.jpg"]
             },
             {
                 id: 8,
@@ -87,8 +87,8 @@
                 price: 75000,
                 shortDesc: "تقویم فانتزی رومیزی",
                 fullDesc: "تقویم رومیزی ۲۰۲۶ با طراحی زیبا، پایه فلزی محکم، مناسب برای میز کار و مطالعه، شامل تعطیلات رسمی.",
-                images: ["images/calendar1.jpg", "images/calendar1-2.jpg"],
-                thumbnails: ["images/calendar1.jpg", "images/calendar1-2.jpg"]
+                images: ["images/calendar1.jpg"],
+                thumbnails: ["images/calendar1.jpg"]
             },
             {
                 id: 10,
