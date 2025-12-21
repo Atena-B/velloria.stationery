@@ -8,7 +8,7 @@
                 shortDesc: "خودکار ژله‌ای با نوک ۰.۵ میلی‌متر",
                 fullDesc: "خودکار ژله‌ای با کیفیت بالا، رنگ نوشتاری مشکی ، نوک ۰.۵ میلی‌متر، مناسب برای نوشتن طولانی مدت بدون خستگی دست. بدنه ارگونومیک و مقاوم.",
                 images: ["images/pen1.jpg", "images/pen1-2.jpg", "images/pen1-3.jpg"],
-                thumbnails: ["images/pen1.jpg", "images/pen1-2.jpg", "images/pen1-3.jpg"]
+                thumbnails: ["images/pen1.jpg", "images/pen1-2.jpg"]
             },
             {
                 id: 2,
